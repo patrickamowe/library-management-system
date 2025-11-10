@@ -110,9 +110,9 @@ class TestLibrary(unittest.TestCase):
         self.library.add_item(self.magazine)
         self.library.add_item(self.dvd)
 
-        result1 = self.library.search_item(title="The Pragmatic Programmer")
-        result2 = self.library.search_item(author_name="Susan Goldberg")
-        result3 = self.library.search_item(item_id=self.dvd.get_id())
+        result1 = self.library.search_item(keyword="The Pragmatic Programmer")
+        result2 = self.library.search_item(keyword="Susan Goldberg")
+        result3 = self.library.search_item(keyword=self.dvd.get_id())
 
         self.assertEqual(len(result1), 1)
         self.assertEqual(result1[0].get_id(), self.book.get_id())
@@ -120,7 +120,4 @@ class TestLibrary(unittest.TestCase):
         self.assertEqual(result2[0].get_id(), self.magazine.get_id())
         self.assertEqual(len(result3), 1)
         self.assertEqual(result3[0].get_id(), self.dvd.get_id())
-
-        with self.assertRaises(Exception):
-            self.library.search_item()
         

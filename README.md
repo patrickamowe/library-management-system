@@ -1,15 +1,11 @@
-# library-management-system
-A full-featured Library Management System built to streamline library operations. It enables efficient management of books, members, borrowing records, and other library activities.
-
-
-# 📚 Library Management System
+# Library Management System
 
 A Python-based **Library Management System** that demonstrates Object-Oriented Programming (OOP) principles such as encapsulation, inheritance, and polymorphism.
 The project allows you to manage library items (books, magazines, DVDs), members, and borrowing activities, with automated tests written using the **unittest** framework.
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 library-management-system/
@@ -34,7 +30,7 @@ library-management-system/
 
 ---
 
-## ⚙️ Features
+## Features
 
 * Add and manage library items (Books, Magazines, DVDs, etc.)
 * Register and manage library members
@@ -45,7 +41,7 @@ library-management-system/
 
 ---
 
-## 🧩 System Architecture & Class Relationships
+## System Architecture & Class Relationships
 
 Below is a high-level description of the relationships between the core classes:
 
@@ -76,7 +72,7 @@ Below is a high-level description of the relationships between the core classes:
 * Handles borrowing and returning logic.
 * Calculates fines using item due dates and return dates.
 
-### **📈 Class Diagram (Text-Based Representation)**
+### **Class Diagram (Text-Based Representation)**
 
 ![Library Management System Class Diagram](docs/class_diagram.png)
 
@@ -84,7 +80,7 @@ Below is a high-level description of the relationships between the core classes:
 
 ---
 
-## 🧪 Running the Tests
+## Running the Tests
 
 Make sure you are in the project root directory, then run:
 
@@ -94,14 +90,14 @@ python -m unittest discover tests
 
 ---
 
-## 🧰 Requirements
+## Requirements
 
 * Python 3.9+
 * No external dependencies required (standard library only)
 
 ---
 
-## 🧾 License
+## License
 
 This project is for **educational purposes** 
 and demonstrates OOP and testing concepts in Python.

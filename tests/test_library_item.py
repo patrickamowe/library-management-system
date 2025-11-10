@@ -99,11 +99,11 @@ class TestLibraryItem(unittest.TestCase):
         two_years_overdue = self.two_years_due_borrowed_item.calculate_fine()
         not_overdue = self.not_overdue_item.calculate_fine()
 
-        self.assertEqual(not_overdue, 0)
-        self.assertEqual(two_days_overdue, 30)
-        self.assertEqual(two_months_overdue, 1_000)
-        self.assertEqual(one_year_overdue, 10_000)
-        self.assertEqual(two_years_overdue, 10_000)
+        self.assertEqual(not_overdue, 0.00)
+        self.assertEqual(two_days_overdue, 30.00)
+        self.assertEqual(two_months_overdue, 1_000.00)
+        self.assertEqual(one_year_overdue, 10_000.00)
+        self.assertEqual(two_years_overdue, 10_000.00)
 
 
 class TestBook(unittest.TestCase):
